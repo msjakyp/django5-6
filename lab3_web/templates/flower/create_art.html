@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <title>Flower Market </title>
+</head>
+<body>
+<hr size="15" color="black"></hr>
+<div class="content">
+
+    <div class="header">
+        <div><a href="flowermarket.html "> <img src="{% static 'images/logo.jpg' %}"> </a></div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="flowermarket.html">HOME</a></li>
+                <li><a href="/5thpage">FLOWERS</a></li>
+                <li><a href="">PRICE</a></li>
+                <li><a href="">PAYMENT</a></li>
+                <li><a href="/6thpage">CONTACT US</a></li>
+                <li><a href="{% url '7thpage' %}">SIGN IN</a></li>
+                <li><a href="">🛒</a></li>
+            </ul>
+        </div>
+    </div>
+
+    {% block container %}
+        <form method="post">
+            {% csrf_token %}
+            {{ form.title }}<br>
+            {% comment %} {{ form.prod_image }}<br> {% endcomment %}
+            {{ form.price }}<br>
+            <span> {{ error }} </span><br>
+            {% comment %} <input type="text" placeholder="Product name" class="form-control"><br>
+            <input type="file" placeholder="Product image" class="form-control"><br>
+            <input type="text" placeholder="Product description" class="form-control"><br> {% endcomment %}
+            <button class="btn btn-success" type="submit">Add product</button>
+        </form>
+    {% endblock container %}
+
+
+
+
+    <hr size="1" color="black"></hr>
+
+
+</div>
+<footer>
+    <div class="footer_content">
+        <div>
+
+            <a href="https://yandex.kz/maps/162/almaty/?utm_medium=mapframe&utm_source=maps"></a>
+            <a href="https://yandex.kz/maps/162/almaty/?from=api-maps&ll=76.909832%2C43.234895&mode=usermaps&origin=jsapi_2_1_76&um=constructor%3Adf7d0e33cc9fdd1d8c14e663fd3b891814bd21d32506552494de3083ed79c22f&utm_medium=mapframe&utm_source=maps&z=17"></a>
+
+            <iframe src="https://yandex.kz/map-widget/v1/-/CWs6BLZG" width="430" height="250" allowfullscreen="true"
+                    style="position:relative; margin-top: 20px;"></iframe>
+
+        </div>
+
+        <div class="Text">
+            <ul class="ul">
+                <li><a href="flowermarket.html">HOME</a></li>
+                <li><a href="flowers.html">FLOWERS</a></li>
+                <li><a href="">PRICE</a></li>
+                <li><a href="">PAYMENT</a></li>
+                <li><a href="registr.html">SIGN IN</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+
+            <p> © Copyright M&A FLOWERS MARKET. All Rights Reserved, 2021 </p>
+
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>

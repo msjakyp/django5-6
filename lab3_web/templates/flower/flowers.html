@@ -1,0 +1,319 @@
+{% extends 'flower/main.html' %}
+{% load static %}
+{% block container %}
+
+         <hr   size="1" color="black">  </hr>
+    <div class="portfolio">
+
+      <div class="our_portfolio">  <h1>❀ Flowers Catalog</h1> </div>
+
+      <div class="portfolio_imgs">
+        {% for data in flowers %}
+        <div class="image_cont">
+          <img src='{{ data.picture.url }}' style="width:90%; margin: 0 15px;">
+          <div class="view"> КУПИТЬ >> </div>
+          <h1>{{data.title}}</h1>
+          <p>{{data.price}}</p>
+        </div>
+        {% endfor %}
+      </div>
+          {% comment %}<img src={% static 'images/buket22.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из белых роз и пион «Любимая» 14000₸</p>
+        </div>
+
+
+        <div class="image_cont">
+         	<img src={%static 'images/buket23.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+         	  <div class="view"> КУПИТЬ >> </div>
+            <p>Букет из 25 розовых роз  25000₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket45.jpg'%} , style= "width: 90%; margin: 0 15px;">
+              <div class="view"> КУПИТЬ >> </div>
+              <p>Букет «Аромат» 11500₸</p>
+        </div>
+      </div>{% endcomment %}
+
+
+    <div class="portfolio1">
+
+      <div class="portfolio_imgs">
+
+        {% for data in flowers %}
+            <div class="image_cont">
+                <img src={{ data.picture.url }} style= "width: 90%; margin: 0 15px;" >
+                <div class="view"> КУПИТЬ >> </div>
+                <h1>{{data.title}}</h1>
+                <p>{{data.price}}</p>
+            </div>
+        {% endfor %}
+
+        {% comment %}<div class="image_cont">
+         	<img src={% static 'images/buket11.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+         	<div class="view"> КУПИТЬ >> </div>
+          <p>Букет из разноцветных роз «Мистика»  7500₸</p>
+        </div>
+
+        <div class="image_cont">
+         	<img src={% static 'images/buket12.jpg'%} , style= "width: 90%; margin: 0 15px;">
+         	<div class="view"> КУПИТЬ >> </div>
+          <p>Букет «Моя» 14300₸</p>
+        </div>{% endcomment %}
+
+      </div>
+
+    </div>
+
+
+    <div class="portfolio2">
+
+      <div class="portfolio_imgs">
+        <div class="image_cont">
+          <img src={% static 'images/buket13.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+         	<p>Букет из голландских, кустовых желтых роз и лилии «Желтые лучи» 12500₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket14.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+         	<div class="view"> КУПИТЬ >> </div>
+          <p>Букет из роз и лилии «Нежность» 10500₸</p>
+        </div>
+
+        <div class="image_cont">
+         	<img src={% static 'images/buket9.jpg'%} , style= "width: 90%; margin: 0 15px;">
+         	<div class="view"> КУПИТЬ >> </div>
+          <p>Букет из пионовидных роз «Милашка» 14000₸</p>
+         </div>
+
+      </div>
+    </div>
+
+
+    <div class="portfolio3">
+
+      <div class="portfolio_imgs">
+        <div class="image_cont">
+          <img src={% static 'images/buket16.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из спрей роз и гортензии «Цветочный подарок» 27000₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket17.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Композиция «Гнездышко» 6000₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket18.jpg'%} , style= "width: 90%; margin: 0 15px;">
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из пионовидных роз «Холодное сердце» 13000₸</p>
+         </div>
+
+      </div>
+    </div>
+
+
+    <div class="portfolio4">
+
+      <div class="portfolio_imgs">
+        <div class="image_cont">
+          <img src={% static 'images/buket19.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из голландских и пионовидных роз «Розовый закат» 18000₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket20.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из 31 красных роз 70 см  25000₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket21.jpg'%} , style= "width: 90%; margin: 0 15px;">
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из 15 роз 90 см  19000₸</p>
+         </div>
+
+      </div>
+    </div>
+
+
+    <div class="portfolio5">
+
+      <div class="portfolio_imgs">
+        <div class="image_cont">
+          <img src={% static 'images/buket25.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет 15 белых лилий 20700₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket26.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет «Дария» 12000₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket27.jpg'%} , style= "width: 90%; margin: 0 15px;">
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из разноцветных хризантем «Радуга» 11700₸</p>
+         </div>
+
+      </div>
+    </div>
+
+
+    <div class="portfolio6">
+
+      <div class="portfolio_imgs">
+        <div class="image_cont">
+          <img src={% static 'images/buket28.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет «Океан любви» 24500₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket29.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Мини букет «Невеста» 8000₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket30.jpg'%} , style= "width: 90%; margin: 0 15px;">
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из полевых цветов «Аяулым» 12000₸</p>
+         </div>
+
+      </div>
+    </div>
+
+
+    <div class="portfolio7">
+
+      <div class="portfolio_imgs">
+        <div class="image_cont">
+          <img src={% static 'images/buket31.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из белых и оранжевых роз «Рыжая» 19000₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket32.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из гортензии 7500₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket33.jpg'%} , style= "width: 90%; margin: 0 15px;">
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет «Поэма о любви» 11000₸</p>
+         </div>
+
+      </div>
+    </div>
+
+
+    <div class="portfolio8">
+
+      <div class="portfolio_imgs">
+        <div class="image_cont">
+          <img src={% static 'images/buket34.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из белых роз «White» 17000₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket35.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>17 розовых роз в коробочке 11200₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket36.jpg'%} , style= "width: 90%; margin: 0 15px;">
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Композиция «Динара» 13000₸</p>
+         </div>
+
+      </div>
+    </div>
+
+
+    <div class="portfolio9">
+
+      <div class="portfolio_imgs">
+        <div class="image_cont">
+          <img src={% static 'images/buket37.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет «Мадемуазель» 12000₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket38.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из 51 роз 27000₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket39.jpg'%} , style= "width: 90%; margin: 0 15px;">
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из белых лилий, альстромерии и роз 16000₸</p>
+         </div>
+
+      </div>
+    </div>
+
+
+    <div class="portfolio10">
+
+      <div class="portfolio_imgs">
+        <div class="image_cont">
+          <img src={% static 'images/buket40.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из роз и лилий «Зефир» 13700₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket41.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из пионовидных роз «Ванда» 25000₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket42.jpg'%} , style= "width: 90%; margin: 0 15px;">
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из алых роз «Манхеттен» 20000₸</p>
+         </div>
+
+      </div>
+    </div>
+
+
+    <div class="portfolio11">
+
+      <div class="portfolio_imgs">
+        <div class="image_cont">
+          <img src={% static 'images/buket43.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет тюльпанов и роз «Модель» 14000₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket44.jpg'%} , style= "width: 90%; margin: 0 15px;" >
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Композиция «Тропикана» 30000₸</p>
+        </div>
+
+        <div class="image_cont">
+          <img src={% static 'images/buket24.jpg'%} , style= "width: 90%; margin: 0 15px;">
+          <div class="view"> КУПИТЬ >> </div>
+          <p>Букет из роз и гортензии «Гармония» 7500₸</p>
+         </div>
+
+      </div>
+    </div>
+    </div>
+	{% endblock container %}
